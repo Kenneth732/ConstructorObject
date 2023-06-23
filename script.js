@@ -14,3 +14,19 @@ var contacts = [
 ];
 
 
+// Function to display contacts
+function displayContacts() {
+  var contactsContainer = document.getElementById("contacts");
+  contactsContainer.innerHTML = "";
+
+  contacts.forEach(function(contact) {
+    var contactElement = document.createElement("div");
+    contactElement.innerHTML = "<h3>" + contact.name + "</h3>" +
+      "<p>Phone: " + contact.phoneNumber + "</p>" +
+      "<p>Email: " + contact.email + "</p>";
+
+    contactsContainer.appendChild(contactElement);
+  });
+}
+
+
