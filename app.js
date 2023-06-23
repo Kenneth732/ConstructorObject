@@ -29,3 +29,24 @@ function Contact(name, phoneNumber, email) {
     });
   }
   
+  // Function to display statistics and charts
+  function displayStatistics() {
+    var dashboardContainer = document.getElementById("dashboard");
+    dashboardContainer.innerHTML = "";
+  
+    // Display statistics and charts based on your requirements
+    // You can use libraries like Chart.js for data visualization
+  
+    // Example statistics display
+    var totalContacts = contacts.length;
+    var statisticsElement = document.createElement("div");
+    statisticsElement.innerHTML = "<h2>Statistics</h2>" +
+      "<p>Total Contacts: " + totalContacts + "</p>";
+  
+    dashboardContainer.appendChild(statisticsElement);
+  }
+  
+  // Call the functions to display contacts and statistics
+  displayContacts();
+  displayStatistics();
+  
